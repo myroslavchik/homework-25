@@ -1,0 +1,48 @@
+.help {
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 56px;
+        padding: 16px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin-bottom: 40px;
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #212529;
+        }
+
+    }
+
+    .drop {
+        color: #000;
+        min-height: 57px;
+        width: 100%;
+        background-color: #DEE2E6;
+        border: 1px solid transparent;
+    }
+
+    .dropdown-menu {
+        
+
+        p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #212529;
+            padding: 20px;
+        }
+    }
+}

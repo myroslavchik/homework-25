@@ -22,7 +22,9 @@
 
         .btn-group-details {
             width: 100%;
-            border-radius: 5pxrgb(147, 201, 254)
+            flex-wrap: wrap;
+            border:  1px solid #93c9fe;
+            border-radius: 5px;
 
             button {
                 background-color: #CED4DA;

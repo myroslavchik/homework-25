@@ -5,7 +5,7 @@
 }
 
 .container {
-  min-width: 1170px;
+  max-width: 1170px;
   margin: 0;
   padding: 0;
 }
@@ -164,7 +164,7 @@ hr {
   height: 100vh;
 }
 .main .content-wrapper .content-row-1 {
-  margin-right: 25px;
+  margin-right: 0;
 }
 .main .content-wrapper .menu {
   min-height: 60px;
@@ -205,7 +205,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 380px;
+  max-width: 380px;
   height: 240px;
   background-color: #fff;
   border-radius: 3px;
@@ -239,7 +239,7 @@ hr {
 }
 .main .skills {
   padding: 30px;
-  width: 380px;
+  max-width: 380px;
   background-color: #fff;
   border-radius: 3px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -280,8 +280,12 @@ hr {
 }
 .content-row-2 .personal .btn-group-details {
   width: 100%;
-  border-radius: 5pxrgb 147, 201, 254 button;
-  border-radius-background-color: #CED4DA;
+  flex-wrap: wrap;
+  border: 1px solid #93c9fe;
+  border-radius: 5px;
+}
+.content-row-2 .personal .btn-group-details button {
+  background-color: #CED4DA;
 }
 .content-row-2 .personal .row .title {
   font-family: "Roboto";
@@ -307,6 +311,25 @@ hr {
 }
 .content-row-2 .personal .buttons {
   float: right;
+}
+
+.active-users h2 {
+  margin-bottom: 40px;
+}
+.active-users span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #212529;
+}
+.active-users .table-1 {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.active-users .table-1 .thead-light th {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -591,6 +614,60 @@ hr {
   }
   .content-row-2 .personal .buttons {
     float: right;
+  }
+  .active-users h2 {
+    margin-bottom: 40px;
+  }
+  .active-users span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+  }
+  .active-users .table-1 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  .active-users .table-1 .thead-light th {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  .help h2 {
+    margin-bottom: 40px;
+  }
+  .help .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 56px;
+    padding: 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+  .help .title p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+  }
+  .help .drop {
+    color: #000;
+    min-height: 57px;
+    width: 100%;
+    background-color: #DEE2E6;
+    border: 1px solid transparent;
+  }
+  .help .dropdown-menu p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212529;
+    padding: 20px;
   }
 }
 
