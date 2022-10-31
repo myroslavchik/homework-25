@@ -47,11 +47,13 @@ nav .vertical-menu-logo .open-menu-btn hr {
 }
 nav li {
     list-style: none;
-    padding: 10px 10px;
+    padding: 20px 60px;
     cursor: pointer;
 }
 nav li:hover {
     color: rgb(41, 84, 186);
+    background-color: #ede1e1ad;
+    border-radius: 5px;
 }
 nav li#user-info { 
     position: absolute;
@@ -76,6 +78,11 @@ nav li#user-info > span:after{
   left: -20px; top: 0; bottom: 0;
   margin: auto;
   border-radius: 50%;
+}
+
+#user-info {
+    align-items: center;
+    padding-left: 0;
 }
 
 .content-wrapper {
@@ -105,6 +112,20 @@ nav li#user-info > span:after{
   left: 7px;
   right: 100%;
 }
+
+.vertical-menu li:not(:last-child)::before {
+    content: url(/img/circle.svg);
+    position: absolute;
+    left: 10px;
+    transform: translateY(-5px);
+}
+.vertical-menu li:not(:last-child):hover::before {
+    content: url(/img/circle-black.svg);
+    position: absolute;
+    left: 10px;
+    transform: translateY(-5px);
+}
+
 
 .closed-menu .vertical-menu-wrapper ul,.closed-menu .vertical-menu-wrapper hr {
     margin-left: -260px;

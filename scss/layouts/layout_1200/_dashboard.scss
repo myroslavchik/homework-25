@@ -47,12 +47,10 @@ nav .vertical-menu-logo .open-menu-btn hr {
 }
 nav li {
     list-style: none;
-    padding: 10px 10px;
+    padding: 20px 60px;
     cursor: pointer;
 }
-nav li:hover {
-    color: rgb(41, 84, 186);
-}
+
 nav li#user-info { 
     position: absolute;
     bottom: 0;

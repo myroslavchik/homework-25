@@ -1,3 +1,14 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   line-height: 1;
@@ -70,12 +81,14 @@ nav .vertical-menu-logo .open-menu-btn hr {
 
 nav li {
   list-style: none;
-  padding: 10px 10px;
+  padding: 20px 60px;
   cursor: pointer;
 }
 
 nav li:hover {
   color: rgb(41, 84, 186);
+  background-color: rgba(237, 225, 225, 0.6784313725);
+  border-radius: 5px;
 }
 
 nav li#user-info {
@@ -104,6 +117,11 @@ nav li#user-info > span:after {
   bottom: 0;
   margin: auto;
   border-radius: 50%;
+}
+
+#user-info {
+  align-items: center;
+  padding-left: 0;
 }
 
 .content-wrapper {
@@ -139,6 +157,20 @@ nav li#user-info > span:after {
   right: 100%;
 }
 
+.vertical-menu li:not(:last-child)::before {
+  content: url(/img/circle.svg);
+  position: absolute;
+  left: 10px;
+  transform: translateY(-5px);
+}
+
+.vertical-menu li:not(:last-child):hover::before {
+  content: url(/img/circle-black.svg);
+  position: absolute;
+  left: 10px;
+  transform: translateY(-5px);
+}
+
 .closed-menu .vertical-menu-wrapper ul, .closed-menu .vertical-menu-wrapper hr {
   margin-left: -260px;
 }
@@ -165,6 +197,12 @@ hr {
 }
 .main .content-wrapper .content-row-1 {
   margin-right: 0;
+}
+.main .content-wrapper .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .main .content-wrapper .menu {
   min-height: 60px;
@@ -312,6 +350,9 @@ hr {
 .content-row-2 .personal .buttons {
   float: right;
 }
+.content-row-2 .personal .buttons .first {
+  margin-right: 15px;
+}
 
 .active-users h2 {
   margin-bottom: 40px;
@@ -396,11 +437,8 @@ hr {
   }
   nav li {
     list-style: none;
-    padding: 10px 10px;
+    padding: 20px 60px;
     cursor: pointer;
-  }
-  nav li:hover {
-    color: rgb(41, 84, 186);
   }
   nav li#user-info {
     position: absolute;
