@@ -158,14 +158,14 @@ nav li#user-info > span:after {
 }
 
 .vertical-menu li:not(:last-child)::before {
-  content: url(/img/circle.svg);
+  content: url(../img/circle.svg);
   position: absolute;
   left: 10px;
   transform: translateY(-5px);
 }
 
 .vertical-menu li:not(:last-child):hover::before {
-  content: url(/img/circle-black.svg);
+  content: url(../img/circle-black.svg);
   position: absolute;
   left: 10px;
   transform: translateY(-5px);
